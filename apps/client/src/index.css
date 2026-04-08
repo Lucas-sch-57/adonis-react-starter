@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Geist:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0a;
+  --bg-2: #111111;
+  --bg-3: #1a1a1a;
+  --border: #222222;
+  --border-hover: #333333;
+  --text: #e8e8e8;
+  --text-muted: #555555;
+  --text-secondary: #888888;
+  --accent: #A8FF3E;
+  --accent-dim: rgba(168, 255, 62, 0.08);
+  --accent-border: rgba(168, 255, 62, 0.2);
+  --error: #ff4d4d;
+  --error-dim: rgba(255, 77, 77, 0.08);
+}
+
+html {
+  font-family: 'Geist', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono {
+  font-family: 'DM Mono', monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 2px; }
+
+/* Animations */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.4s ease both;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
