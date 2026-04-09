@@ -60,7 +60,7 @@ export function HomePage() {
             docs
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Lucas-sch-57/adonis-react-starter"
             target="_blank"
             rel="noreferrer"
             className="text-sm transition-colors"
@@ -84,7 +84,7 @@ export function HomePage() {
       <main className="relative z-10 flex-1 flex flex-col justify-center px-8 py-24 max-w-5xl mx-auto w-full">
         <div className="animate-fade-up" style={{ animationDelay: '0ms' }}>
           <p className="font-mono text-xs mb-6" style={{ color: 'var(--text-muted)' }}>
-            <span style={{ color: 'var(--accent)' }}>$</span> npx create-adonis-react-app my-project
+            <span style={{ color: 'var(--accent)' }}>$</span> npx create-adonis-react-starter my-project
             <span className="animate-blink ml-0.5" style={{ color: 'var(--accent)' }}>▊</span>
           </p>
         </div>
@@ -121,7 +121,7 @@ export function HomePage() {
             get started →
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/Lucas-sch-57/adonis-react-starter"
             target="_blank"
             rel="noreferrer"
             className="font-mono text-sm px-6 py-3 rounded transition-all"
