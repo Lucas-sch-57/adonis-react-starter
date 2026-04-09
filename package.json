@@ -1,0 +1,8 @@
+{
+  "name": "adonis-react-starter",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/client"
+  ]
+}
